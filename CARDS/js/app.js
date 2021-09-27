@@ -36,10 +36,10 @@ btn_enviar.addEventListener('click', (e) => {
     e.preventDefault();
 
     if (dataMin > data_limite.value) {
-        alert("A data limite da tarefa não pode ser inferior a data de hoje")
+        alert("Preencha a data corretamente:\n\n- A data limite não pode estar em branco.\n- Não pode ser inferior a data de hoje")
         data_limite.value = "";
-    } else if (descricao.value.trim() == "") {
-        alert("Preencha todos os campos!")
+    } else if (descricao.value.trim() == "" || descricao.value.length < 10) {
+        alert("Preencha a descrição corretamente:\n\n- A descrição não pode estar em branco.\n- Deve conter no mínimo 10 caracteres.")
         descricao.focus();
     } else { 
         cards_content.insertAdjacentHTML('beforeend',
