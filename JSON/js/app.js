@@ -26,6 +26,7 @@ btnUrl.addEventListener('click', () => {
             }
         }
     })
+    .catch(erro => alert(erro, "Ops! Algo deu errado.. tente novamente."))
 });
 
 
