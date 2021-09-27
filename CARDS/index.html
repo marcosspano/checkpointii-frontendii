@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CARDS</title>
+</head>
+<body>
+    <h2>Notas DH</h2>    
+    <div>
+        <button id="btn_add">+</button>
+    </div>
+
+    <div id="cards_content">
+        <div id="form_entrada">
+            <form action="#">
+                <div>
+                    <label for="data_criacao">Data de Criação: </label>
+                    <input type="date" id="data_criacao" required disabled>
+                </div>
+
+                <div>
+                    <label for="data_limite">Data Limite: </label>
+                    <input type="date" id="data_limite" required>
+                </div>
+
+                <div>
+                    <textarea name="descricao" id="descricao" cols="30" rows="10" minlength="10" placeholder="Descrição" required></textarea>
+                </div>
+
+                <div>
+                    <input id="enviar" type="submit" value="Enviar">
+                    <input id="cancelar" type="reset" value="Cancelar">
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="./js/app.js"></script>
+
+</body>
+</html>
